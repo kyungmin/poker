@@ -20,12 +20,8 @@ class Deck
     @cards.shuffle!
   end
 
-  def draw_card(num_cards = 1)
-    drawn_cards = []
-    num_cards.times do
-      drawn_cards << @cards.pop
-    end
-    drawn_cards
+  def draw_card
+    @cards.pop
   end
 end
 

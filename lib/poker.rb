@@ -9,8 +9,28 @@ class Poker
   def initialize
     @deck = Deck.new
     @players = [Player.new, Player.new]
+#    @user_actions = [:replace, :fold, :see, :raise]
+
     deal_cards
+#    play
   end
+  #
+  # def play
+  #   deal_cards
+  #   pot = 0
+  #
+  #   replace(player[0], 3)
+  #
+  #
+  #   # loop do
+  #   #   prompt_user_input
+  #   #
+  #   #
+  #   # end
+  #
+  #
+  # end
+
 
   def deal_cards
     players.each do |player|
@@ -33,3 +53,8 @@ class Poker
     cards
   end
 end
+
+#
+# k = Poker.new
+#
+# p k.players[0].cards[2].suit

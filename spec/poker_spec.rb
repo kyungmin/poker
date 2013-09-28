@@ -26,14 +26,12 @@ describe "Game of Poker" do
     #   expect { poker.players[0].discard(2) }.to change { poker.players[0].hand.cards.count }.by(-1)
     # end
 
-    let(:old_card) { Card.new(player.cards[2][0].suit, player.cards[2][0].value) }
+    let(:old_card) { Card.new(player.cards[2].suit, player.cards[2].value) }
 
     it "replacing a card should work" do
       poker.replace(player, 2)
       expect(player.cards[2]).to_not eq(old_card)
-
     end
-
   end
 
 

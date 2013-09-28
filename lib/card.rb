@@ -6,9 +6,9 @@ class Card
     @value = value
   end
 
-  # def dup
-  #   Card.new()
-  #
-  # end
+  def dup
+    Card.new(@suit, @value)
+
+  end
 
 end

@@ -1,12 +1,12 @@
 class Player
-  attr_accessor :hand, :pot, :cards
+  attr_accessor :pot, :cards #,:hand
 
 
 
   def initialize
-    @hand = Hand.new
+#    @hand = Hand.new
     @pot = 500
-    @cards = @hand.cards
+    @cards = []
 
   end
 
